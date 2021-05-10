@@ -37,12 +37,71 @@
 
         <section>
             <h4>pre</h4>
-            <p></p>
+            <p>Se utiliza para tener codigo preformateado que necesita ser representado igual que se escribio</p>
+            <pre>Esto      esta escrito         tal cual 
+                lo escribí en                       el              html
+            </pre>
+        </section>
+
+        <section>
+            <h4>div</h4>
+            <p>Se itiliza como division del documento, semanticamente significa nada, es un contenedor generico que se usa generalmente para dar estilos a traves de css o para usar algo denominado "delegación de eventos" en javascript</p>
+            <div>
+                <h2>Nombre</h2>
+                <p>email</p>
+                <p>descripción</p>
+            </div>
+        </section>
+
+        <section>
+            <h4>hr</h4>
+            <p>significa "horizontal rule" y se utiliza para decirle al navegador que vamos a cambiar de tema </p>
+            <hr>
         </section>
 
         <section>
             <h3>Elementos de linea</h3>
             <span>Son aquellos cuyo contendor es del <em>largo del contenido</em> y pueden <strong>darle</strong> algunos <i>estilos</i> a las palabras que las contienen, estas son :  <b> em , strong , small , br , wbr , time , i , b , u, sup, sub  .</b> </span>
+            <br> <br>
+            <span>Es del ancho de su contenido</span>
+        </section>
+
+        <section>
+            <h3>span</h3>
+            <span>contenedor de linea que sirve para darle estilos con CSS o identificarlos con JS</span>
+        </section>
+
+        <section>
+            <h4>q</h4>
+            <span>equivalente a blocquote pero en linea</span>
+            <q>Yo soy IronMan</q>
+        </section>
+
+        <section>
+            <h3>code</h3>
+            <span>Sirve para encerrar codigo que queremos representar visualmente, suele ir unido con la etiqueta pre</span>
+            <pre>
+                <code>
+                    import cv2
+                    video = cv2.VideoCapture(0)
+                    while True:
+                        ret,frame = video.read()
+                        if ret == False:
+                            break
+
+                        cv2.imshow('video',frame)
+
+                        q = cv2.waitKey(1)
+                        if q == ord('q'):
+                            break
+                    cv2.destroyAllWindows()
+                    video.release()
+                </code>
+            </pre>
+            <section>
+                <span>para escribir caracteres, se deben escribir en su codigo ASCII</span>
+                <a href="https://ascii.cl/es/codigos-html.htm">CodigosASCII_HTML</a>
+            </section>
         </section>
 
     </main>

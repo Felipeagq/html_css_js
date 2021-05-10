@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+
+    <header>
+        <h1>Formularios</h1>
+        <a href="HTML.html">Volver</a>
+    </header>
+
+    <main>
+        
+        <section>
+            <h2>form</h2>
+            <p>La etiqueta que engloba nuestro formulario</p>
+        </section>
+
+        <section>
+            <h2>label</h2>
+            <p>Sirve para escribir el nombre del campo a rellenar</p>
+        </section>
+
+        <section>
+            <h2>input</h2>
+            <p>Sirve para crear un campo que permitirá al usuario intereactuar</p>
+        </section>
+
+        <section>
+            <h2>button</h2>
+            <p>Crea un botón que permitirá enviar el formulario</p>
+        </section>
+
+        <section>
+            <h2>Más sobre formularios</h2>
+            <section>
+                <h3>Unir "label" e "input"</h3>
+                <p>Para eso el atributo "for" de label y el atributo "id" de input, deben tener el mismo nombre</p>
+            </section>
+            <section>
+                <h3>"type" de input que existen</h3>
+                <dl>
+                    <dt><b>button</b></dt>
+                    <dd>Es un boton, este boton es diferente a la etiqueta "button", este input tipo boton se usa para que haga alguna acción en el formulario, pero NO  es para enviar el formulario</dd>
+
+                    <dt><b>color</b></dt>
+                    <dd>Se utiliza para dar color</dd>
+
+                    <dt><b>date</b></dt>
+                    <dd>Para introducir fehca</dd>
+
+                    <dt><b>datetime</b></dt>
+                    <dd>Obsoleto</dd>
+
+                    <dt><b>datetime-local</b></dt>
+                    <dd>fecha y hora, no funciona en firefox</dd>
+
+                    <dt><b>email</b></dt>
+                    <dd>introducir el email, se ve diferente en un movil</dd>
+
+                    <dt><b>hidden</b></dt>
+                    <dd>Campo oculto, puede contener un valor, pero no se mostrará</dd>
+
+                    <dt><b>month</b></dt>
+                    <dd>introducir el mes</dd>
+
+                    <dt><b>number</b></dt>
+                    <dd>introducir valores numericos</dd>
+
+                    <dt><b>password</b></dt>
+                    <dd>introducir contraseñas, se ve diferente en un movil</dd>
+
+                    <dt><b>range</b></dt>
+                    <dd>Se usa para establecer un rango</dd>
+
+                    <dt><b>reset</b></dt>
+                    <dd>Se utiliza para resetear el formulario</dd>
+
+                    <dt><b>search</b></dt>
+                    <dd>para las barras de busqueda, se ve diferente en un movil</dd>
+
+                    <dt><b>submit</b></dt>
+                    <dd>Es parecido a la etiqueta, button, ya que si sirve para enviar el formulario</dd>
+
+                    <dt><b>tel</b></dt>
+                    <dd>introducir numeros telefonicos, se ve diferente en un movil</dd>
+
+                    <dt><b>text</b></dt>
+                    <dd>Valor por defecto</dd>
+
+                    <dt><b>time</b></dt>
+                    <dd>introducir hora</dd>
+
+                    <dt><b>url</b></dt>
+                    <dd>introducir URLs, se ve diferente en un movil</dd>
+
+                    <dt><b>week</b></dt>
+                    <dd>introducir numero de semana del año</dd>
+
+                    <dt><b>radio</b></dt>
+                    <dd>para solo selccionar uno, los campos deben tener el mismo "name", Para que uno salga por defecto, debe tener el atributo booleano "checked", y se le asigna un valor con la etiqueta "value" </dd>
+
+                    <dt><b>checkbox</b></dt>
+                    <dd>para seleccinar varios valores, estos tambien tienen un "name" y un "value" </dd>
+
+                    <dt><b>select</b></dt>
+                    <dd>Se puede decir que es una combinación de radio y checkbox, estos dentro de si, tienen la etiqueta "option" la cual contendrá las diferentes opciones del select, el atributo booleano "multiple" dentro de la etiqueta de apertura de select, da la opción de seleccionar vaios campos al mantener la tecla ctrl presionada, para agrupar opciones usamos "optgroup" y se veria el atributo label</dd>
+                </dl>
+            </section>
+        </section>
+
+        <section>
+            <form >
+                <!-- Forma #1 de relacionar input-label -->
+                <label for="Nombre">Nombre</label>
+                <input id="Nombre">
+                <button>Enviar Nombre</button>
+
+                <br>
+
+                <!-- Forma #1 de relacionar input-label -->
+                <label>
+                    Apellido 
+                    <input>
+                </label>
+                <button>Enviar Apellido</button>
+
+                <br>
+                
+                <label>date</label>
+                <input type="date">
+                
+                <br>
+                
+                <label>datetime-local</label>
+                <input type="datetime-local">
+
+                <br>
+
+                <label>color</label>
+                <input type="color">
+
+                                
+                <br>
+                
+                <label>local</label>
+                <input type="time">
+                                
+                <br>
+                
+                <label>email</label>
+                <input type="email">
+                
+                <br>
+                
+                <label>hidden</label>
+                <input type="hidden">
+                                
+                <br>
+                
+                <label>month</label>
+                <input type="month">
+                                                
+                <br>
+                
+                <label>reset</label>
+                <input type="reset">
+                                
+                <br>
+                
+                <label>number</label>
+                <input type="number">
+                                
+                <br>
+                
+                <label>password</label>
+                <input type="password">
+                                                
+                <br>
+                
+                <label>range</label>
+                <input type="range" step="10" min="0" max="100">
+                                                
+                <br>
+                
+                <label>search</label>
+                <input type="search">
+                                                
+                <br>
+                
+                <label>submit</label>
+                <input type="submit">
+                                                
+                <br>
+                
+                <label>tel</label>
+                <input type="tel">
+                                                
+                <br>
+                
+                <label>url</label>
+                <input type="url">
+                                                
+                <br>
+                
+                <label>week</label>
+                <input type="week">
+                                                
+                <br>
+                
+                <label>radio</label>
+                <input type="radio" name="radio" checked value="valor_1">
+                <input type="radio" name="radio" value="valor_2">
+                <input type="radio" name="radio" value="valor_3">
+
+                <br>
+
+                <label>A<input type="checkbox" ></label>
+                <label>B<input type="checkbox"></label> 
+                <label>C<input type="checkbox"></label>
+
+                <br>
+
+                <label>select <select name="seleccion" >
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select></label>
+
+                <br>
+
+                <label>select <select name="seleccion2" multiple >
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select></label>
+
+                <br>
+
+                <label>select <select name="seleccion3">
+                    <optgroup label="Vocales">
+                        <option value="A">A</option>
+                        <option value="E">E</option>
+                    </optgroup>
+                    
+                    <optgroup label="Consonsantes">
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                    </optgroup>
+                </select></label>
+
+                <br>
+
+                <label>datalist</label>
+                <input type="list" list="Letras">
+                <datalist id="Letras">
+                    <option value="A">AAAA</option>
+                    <option value="B">BBBB</option>
+                    <option value="C">CCCC</option>
+                    <option value="D">DDDD</option>
+                </datalist>
+
+
+            </form>
+
+            <section>
+                <h4>Tips</h4>
+                <ul>
+                    <li>cada label junto con su respectivo input, lo podemos meter en un mismo "div"</li>
+                    <li>Lo que hace el atributo "name" es que agrupa campos, lo que hace que solo se pueda marcar uno de ellos</li>
+                    <li>La etiqueta "value" lo que hace es darle un valor a el campo, de modo que si se selecciona ese campo y se envia, se enviara dicho valor</li>
+                    <li>La etiqueta "checked" sirve para que el campo venga marcado por default</li>
+            </ul>
+            </section>  
+        </section>
+
+    </main>
+
+</body>
+</html>
