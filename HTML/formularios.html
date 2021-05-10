@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -109,6 +109,9 @@
 
                     <dt><b>select</b></dt>
                     <dd>Se puede decir que es una combinación de radio y checkbox, estos dentro de si, tienen la etiqueta "option" la cual contendrá las diferentes opciones del select, el atributo booleano "multiple" dentro de la etiqueta de apertura de select, da la opción de seleccionar vaios campos al mantener la tecla ctrl presionada, para agrupar opciones usamos "optgroup" y se veria el atributo label</dd>
+
+                    <dt><b>datalsit</b></dt>
+                    <dd>Muy parecido a select, solo que se debe colocar que es te de type "list" y el colocar un nombre en el atributo "list" <b>list="Lista_XD"</b> y luego aparte dentro de las etiquetas datalist colocar las "option", en las option, el values es el titulo en negrilla y lo que va entre las etiquetas, será una breve descripción </dd>
                 </dl>
             </section>
         </section>
@@ -263,7 +266,9 @@
                 <datalist id="Letras">
                     <option value="A">AAAA</option>
                     <option value="B">BBBB</option>
+                    <option value="B">AASBB</option>
                     <option value="C">CCCC</option>
+                    <option value="C">CCDFC</option>
                     <option value="D">DDDD</option>
                 </datalist>
 
@@ -280,6 +285,50 @@
             </ul>
             </section>  
         </section>
+
+        <hr>
+
+        <section>
+            <dl>
+                <dt><b>fieldset</b></dt>
+                <dd> Se utiliza para agrupar elementos dentro de un formulario </dd>
+
+                <dt><b>legend</b></dt>
+                <dd> Se utiliza para colocarle nombre al campo creado por el fieldset </dd>
+
+                <dt><b>file</b></dt>
+                <dd> Se utiliza para cargar un elemento </dd>
+
+                <dt><b>meter</b></dt>
+                <dd> Representa un valor dentro de un rango conocido, recibe como atributos "min", "max" y value que es el valor a mostrar, "low" para decir que lo que este debajo de ese valor, estará en rojo, "high" para que lo que esté encima de ese valor este en amarillo </dd>
+            </dl>
+        </section>
+
+
+        <form>
+            <fieldset>
+                <legend>Datos personales</legend>
+                <div>
+                    <label for="nombre">nombre</label>
+                    <input type="text" id="nombre">
+                </div>
+                <div>
+                    <label for="apellido">apellido </label>
+                    <input type="text" id="apellido">
+                </div>
+            </fieldset>
+
+            <div>
+                <label >Cargar archivo</label>
+                <input type="file">
+            </div>
+
+            <div>
+                <label for="fuel">llenado</label>
+                <meter id="fuel" min="0" max="100" value="90" low="30" high="80">
+                </meter>
+            </div>
+        </form>
 
     </main>
 
