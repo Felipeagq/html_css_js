@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tablas</title>
+    <style>
+
+        thead{
+            background-color:cyan;
+        }
+        colgroup{
+            background-color:darkorange;
+        }
+        caption{
+            background-color:darkorchid;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>tablas</h1>
+        <a href="HTML.html">Volver</a>
+    </header>
+    <section>
+        <p>la etiqueta <b>table</b> encierra toda la tabla, la etiqueta <b>tr</b> construye una fila y la etiqueta <b>td</b> contruye una celda, el numero maximo de celdas establecera el numero maximo de columnas de la tabla </p>
+        <p> el titulo de la tabla se pone con la etiqueta <b>caption</b> el cual va justo despues de la etiqueta "table" </p>
+        <p>La cabecera de la tabla se crea con la etiqueta <b>thead</b> dentro tendremos una etiqueta "tr" normal pero se establece por le etiqueta <b>th</b> </p>
+        <p> para colocar un pie de tabla se hace con <b>tf</b></p>
+        <p>Creamos primero la fila y a partir de ellas vamos creando las columnas</p>
+    </section>
+
+    <section>
+        <h2>atributos</h2>
+        <p>para hacer que ocupen mas de una fila o una columna se tiene el atributo <b>rowspan y colspan</b> la cual indicar cuantas filas o columnas va a ocupar dicha celda </p>
+        <p>tener el cuenta el "span" empuja a los elementos, si se tiene un span y otros elementos siguientes, este span los empujará</p>
+        <p>Para seleccionar una columna, tenemos el atributo <b>colgroup</b> que permite seleccionar una columna en concreto, dentro pondremos tantas etiquetas "col" como el numero total de columnas siguiendo el mismo orden, tambien podemos usar <b>span</b> </p>
+    </section>
+
+
+    <section>
+        <table>
+            <caption>Titulo de la tabla</caption>
+
+            <colgroup>
+                <col>
+            </colgroup>
+            
+            <thead>
+                <tr>
+                    <th>cabecera 1</th>
+                    <th>cabecera 2</th>
+                    <th>cabecera 3</th>
+                    <th>cabecera 4</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td> celda 1 </td>
+                    <td> celda 2 </td>
+                    <td> celda 3 </td>
+                    <td> celda 4 </td>
+                </tr>
+
+                <tr>
+                    <td> celda 1 </td>
+                    <td colspan="3"> celda 2 </td>
+                </tr>
+
+                <tr>
+                    <td> celda 1 </td>
+                    <td> celda 2 </td>
+                    <td> celda 3 </td>
+                    <td> celda 4 </td>
+                </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="4">pie de tabla</td>
+            </tr>
+        </tfoot>
+
+
+        </table>
+    </section>
+</body>
+</html>
