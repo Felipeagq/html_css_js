@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contenido Embebido</title>
+</head>
+<body>
+    <header>
+        <h1>contenido Embebido</h1>
+        <a href="HTML.html">Volver</a>
+    </header>
+
+    <main>
+        <section>
+            <h2>Que es?</h2>
+            <p>El contenido embebido es todo aquel que nos traemos desde afuera</p>
+            <ul>
+                <li>Imagenes</li>
+                <li>videos</li>
+                <li>audio</li>
+                <li>Iframe</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Imagenes</h2>
+            <p>Las imagenes web se pueden clasificar en 2 tipos</p>
+            <ul>
+                <li>            <h3>Vectoriales</h3>
+                    <p><b>svg</b> recomendado siempre que se pueda</p>
+                </li>
+
+            <li>
+                <h3>Mapa de bits</h3>
+                <p><b>jpg</b></p>
+                <p><b>png</b> 8 y 24 si necesitas transparencia </p>
+                <p><b>git</b> si necesitas una imagen animada</p>
+                <p><b>webp</b> el formato que menos pesa, se usan para imagenes que no pueden ser vertorizadas y su motor de render es la misma web</p>
+            </li>
+            </ul>   
+        </section>
+
+        <section>
+            <h3>Insertar imagen</h3>
+            <p>Se inserta con la etiqueta <b>img</b> y tiene dos atributos <b>src=""</b> que es la ruta donde se encuentra la imagen y <b>alt=""</b> es un texto alternativo que me mostrará si falla la subida de la imagen falla, la etiqueta imagen soporta  todas las extensiones de imagenes (png, jpg, gif, webp, jpeg) </p>
+            <p>Tambien hay dos etiquetas que se le pueden colocar <b>with y height</b> Los cuales son para determinar el "ancho" y el "alto" respectivamente pero el ancho es estatico entonces cuando cambiamos el AspectRadio, para eso podemos mediante CSS agregarle la propiedad max.width: n% </p>
+            <p>Las imagenes <b>svg</b> tienen su propia etiqueta y tiene diferntes atributos que se pueden modificar en CSS.  </p>
+            <img src="assets/imagenes/rose.webp" height="300" alt="Rose de Blackpink">
+        </section>
+
+
+        <section>
+            <h3>srcset</h3>
+            <p>Es un atributo que nos permite cargar una imagen u otra dependiendo del devicePixelRatio, se pasan varios "src" separados por comas y al frente se coloca nx dependiendo del ApectPixelRadio,
+            podemos optimizar el codigo o tener "una copia de seguraridad", se tiene un srcset y si este no sirve o no carga, se puede colcoar un src normal para que muestre algo de contigencia</p>
+            <img srcset="
+            assets/imagenes/rose.webp 1x, 
+            assets/imagenes/rose_other.gif 2x" alt="">
+        </section>
+
+        <section>
+            <h3>picture</h3>
+            <p>trabaja igual que srcset solo que la imagen por default va dentro con un src y se puede establecer con <b>media="(max-width:500px)"</b> para que despues de ese ancho, se carge otra imagen </p>
+            <picture><source srcset="
+                assets/imagenes/rose.webp 1x, 
+                assets/imagenes/rose_other.gif 2x" media="(max-width:500px)">
+            <img src="assets/imagenes/rose.webp" alt="imagen de rose">
+            </picture>
+        </section>
+    </main>
+
+</body>
+</html>
