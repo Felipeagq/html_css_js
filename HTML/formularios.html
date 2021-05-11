@@ -301,6 +301,13 @@
 
                 <dt><b>meter</b></dt>
                 <dd> Representa un valor dentro de un rango conocido, recibe como atributos "min", "max" y value que es el valor a mostrar, "low" para decir que lo que este debajo de ese valor, estará en rojo, "high" para que lo que esté encima de ese valor este en amarillo </dd>
+            
+                <dt><b>progress</b></dt>
+                <dd> Representa el progreso de una tarea, parecido al meter </dd>
+
+                <dt><b>textarea</b></dt>
+                <dd> Se utiliza para introducir texto en un formulario </dd>
+            
             </dl>
         </section>
 
@@ -328,7 +335,51 @@
                 <meter id="fuel" min="0" max="100" value="90" low="30" high="80">
                 </meter>
             </div>
+
+            <div>
+                <label for="task">Tarea 1</label>
+                <progress id="task"max="100" value="75"></progress>
+            </div>
+
+            <div>
+                <label for="comentario">comentario</label>
+                <textarea name="" id="comentario" cols="50" rows="5"></textarea>
+            </div>
         </form>
+
+
+        <hr>
+
+        <section>
+            <h2>atributos</h2>
+            <dl>
+                <dt><b>placeholder</b></dt>
+                <dd> Pista a usuario de lo que debe introducir </dd>
+
+                <dt><b>required</b></dt>
+                <dd> Un campo obligatorio</dd>
+
+                <dt><b>min - max</b></dt>
+                <dd> Establece rango minimo y maximo </dd>
+
+                <dt><b>readonly</b></dt>
+                <dd> Convierte un campo en solo lectura </dd>
+
+                <dt><b>maxlenght - minlenght</b></dt>
+                <dd> Establece el rango minimo y maximo de caracteres </dd>
+
+                <dt><b>selected</b></dt>
+                <dd> Equivale a checked en los select, establece opción por defecto </dd>
+
+                <dt><b>disable </b></dt>
+                <dd> Desacttiva el campo y no se podrá escribir en el autofocus </dd>
+
+                <dt><b>autofocus </b></dt>
+                <dd> Que se active un campo de primero, se selecciona un campo automaticamente </dd>
+
+
+            </dl>
+        </section>
 
     </main>
 
